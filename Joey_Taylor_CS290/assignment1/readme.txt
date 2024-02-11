@@ -1,1 +1,2 @@
 I hope to make a Marvel Snap Collection Tracker so that players can easily share and keep track of their collections, since that currently does not exist.
+I started with a basic layout to get things started, with a brief description, videos (since I was forced to), and a table that represents the future selection process on an abstract level. I hope to make it so in the future users can click on cards and have them be added to their collections, with an option to toggle all cards within a "Series"
