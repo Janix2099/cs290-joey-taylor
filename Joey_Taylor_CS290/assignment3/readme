@@ -1,0 +1,17 @@
+Joey Taylor
+3/12/2024
+CS 290
+Assignment 3
+
+Modified the main page to have proper CSS, 
+Put in mock cards into the collection tracker, 
+Made the layout more accessible for phones and tablets, 
+Added search bars and a drop down menu.
+Put styles in a seperate css file.
+Intentionally avoided fixed layout for adaptability and vertical navigation bars in favor of horizontal ones.
+
+Sitemap 
+Wanted a minimalist site where everything is contained on one page, so it looks a bit lame.
+https://media.discordapp.net/attachments/1174406367524696147/1217303986705535057/image.png?ex=660389ae&is=65f114ae&hm=1c89e7d3bf328d3784e3d1f30cae7fcde7a928cafc1d853a7f0046e97e92ce96&=&format=webp&quality=lossless
+
+Example file is an example site using the properties not used (Overflow, Vendor Prefixes, Float, Clear, and Breadcrumbs)
