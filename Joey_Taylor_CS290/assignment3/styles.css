@@ -1,0 +1,257 @@
+/* Color variables for easy theme management */
+:root {
+    --main-color: #202020;
+    --secondary-color: #fff;
+    --dark-secondary-color: #cccccc;
+    --tertiary-color: #e62429;
+    --dark-tertiary-color: darkred;
+}
+
+/* Base font settings */
+html {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+/* Box sizing and default margin and padding for all elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling including background image and color */
+body {
+    line-height: 1.6;
+    color: var(--main-color);
+    letter-spacing: 1px;
+    background-image: url(https://img.freepik.com/free-vector/abstract-pattern-design_1053-524.jpg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Header layout and styling */
+header {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Responsive header image */
+header img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+    max-height: 150px;
+}
+
+/* Header title styling */
+header h1 {
+    padding: 10px;
+    color: var(--secondary-color);
+    align-self: center;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+/* Subheading styles */
+h2 {
+    color: var(--dark-tertiary-color);
+    font-variant: small-caps;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+nav a, nav a:hover, nav a:active, nav a:focus, nav a:visited {
+    text-decoration: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: var(--main-color);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px; /* Reduced height for a slimmer appearance */
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+/* Navigation container styling for aligning nav items */
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the nav container */
+}
+
+/* Navigation link styling */
+nav a {
+    text-transform: uppercase;
+    padding: 10px 20px;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s, background-color 0.3s, border-radius 0.3s;
+}
+
+/* Hover effect for navigation links */
+nav a:hover {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+}
+
+/* Paragraph styles */
+p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* List styles */
+ol, ul {
+    padding-left: 20px;
+}
+
+/* List item spacing */
+li {
+    margin-bottom: 10px;
+}
+
+/* Section styling with border and background */
+section {
+    border: 1px solid var(--dark-tertiary-color);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+}
+
+/* Label styling */
+label {
+    color: var(--tertiary-color);
+    font-size: 1.2rem;
+    padding: 20px;
+    font-weight: bold;
+}
+
+/* Footer styles including typography and border */
+footer {
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px dashed darkgrey;
+    color: var(--secondary-color);
+    background-color: var(--main-color);
+    flex-grow: 1;
+}
+
+/* Disclaimer section styles */
+.disclaimer {
+    margin-top: 20px;
+    color: var(--dark-secondary-color);
+    font-size: 0.6em;
+}
+
+/* Styles for contact section identifier */
+#contact-section {
+    font-weight: bold;
+    color: var(--tertiary-color);
+    text-transform: uppercase;
+}
+
+/* Style for mailto links */
+a[href^="mailto:"] {
+    color: var(--tertiary-color);
+    text-decoration: none;
+}
+
+/* Grid layout for cards */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 1rem;
+}
+
+/* Individual card styling */
+.card-container {
+    border: 2px dashed darkgrey;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    max-width: 100%;
+}
+
+/* Tablet-specific styles */
+@media (max-width: 900px) {
+    header {
+        padding-top: 50px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .nav-container {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+    header {
+        padding-top: 40px;
+        flex-direction: column;
+    }
+
+    header img {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    nav {
+        box-shadow: none;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav a {
+        padding: 10px;
+        font-size: 0.9rem;
+        text-align: center;
+        border-bottom: 1px solid var(--dark-secondary-color);
+        width: 100%;
+    }
+
+    nav a:last-child {
+        border-bottom: none;
+    }
+
+    section, footer {
+        padding: 10px;
+        margin: 10px;
+    }
+}
