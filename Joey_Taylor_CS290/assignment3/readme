@@ -9,6 +9,7 @@ Made the layout more accessible for phones and tablets,
 Added search bars and a drop down menu.
 Put styles in a seperate css file.
 Intentionally avoided fixed layout for adaptability and vertical navigation bars in favor of horizontal ones.
+Tried maintaining the marvel aesthetic.
 
 Sitemap 
 Wanted a minimalist site where everything is contained on one page, so it looks a bit lame.
