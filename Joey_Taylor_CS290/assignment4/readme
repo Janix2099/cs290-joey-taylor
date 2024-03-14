@@ -1,0 +1,9 @@
+Joey Taylor
+3/13/2024
+CS 290
+Assignment 4
+
+Since I couldn't think of ways to add meaningful javascript to my Marvel Snap Website without implementing servers,
+I instead made an example website by making a calculator. We take input via buttons, and produce outputs with some 
+basic error handling for possible mistakes a user might make. Makes use of various ways to nest const to show an 
+understanding of how scope effects the code.
