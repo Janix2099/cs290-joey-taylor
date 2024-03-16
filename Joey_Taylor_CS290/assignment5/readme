@@ -9,3 +9,8 @@ All card data will also be on the server, includding tags.
 
 For the implementation site, I made a simple server to host some funny star wars quotes utilizing fastapi
 # type python -m uvicorn star_wars_app:app --reload to host!
+
+The tutorial site is where I spent most of my effort, and frankly could have just used it for the first site as well.
+My web development friend said explaining Logging should be fairly quick, so that is what I made my tutorial on.
+Ended up learning about StringIO and had a weird error with the logs creating their own htmls, so that had to make some work arounds.
+# type python -m uvicorn example_logging:app --reload to host!
