@@ -1,1 +1,11 @@
+Joey Taylor
+3/16/2024
+CS 290
+Assignment 5
 
+Going to make a basic implementation of server-side scripting for the sake of this assignment, 
+but how I plan to implement it into the Marvel Snap Website is to use a server to create URLs and some Lazy Loading with the card display.
+All card data will also be on the server, includding tags.
+
+For the implementation site, I made a simple server to host some funny star wars quotes.
+# type python -m uvicorn star_wars_app:app --reload to host!
