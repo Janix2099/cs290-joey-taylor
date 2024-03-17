@@ -1,4 +1,4 @@
-# type python -m uvicorn example_logging:app --reload to host!
+# type python -m uvicorn tutorial_logging:app --reload to host!
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 import logging
