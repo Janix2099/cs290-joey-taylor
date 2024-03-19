@@ -1,1 +1,27 @@
+Joey Taylor
+3/18/2024
+CS 290
+Final
 
+Finish the Marvel Snap Collection Tracker Site, make it so you can select an array of cards that work with filters.
+When you click on the finalize collection button, it will take you to your collection which will have a unique URL so that 
+it is sharable. Make the card information server sided.
+
+I demonstrated all the necessary components in the construction of the website. 
+Though I did not make the full card database since I did not want to input 300 cards, and instead just did enough to show off functionality.
+
+Reviewing the Sites from Start of Term Critiques:
+1. Moodle: Still no sympathy for Moodle
+2. Youtube: Not having a dislike button is still dumb, and I am still super impressed by its design.
+3. Backpack.tf: I imagine they would need to refactor a lot of their code in order to make it so you can search for the item in question 
+along with their attributes by simply typing. Though I think it is also likely the hack could be fairly simple too.
+4. Dominos: Yeah it was mainly just a business model complaint. Though I do think the structure of their site could be a bit more appealing.
+5. Amazon: I have a bit more sympathy with having to literally display everything possible within a single website.
+At least the search bar is convenient.
+
+My previous projects were just about setting up the baselines of this website, which I transitioned into this final. 
+For assignments 4 and 5 I made their own websites so that I could get the assignments done.. so I don't feel any ill will towards how barebones they are.
+
+Server.py says how to run the server in case that isn't obvious to you somehow, I am probably just being paranoid.
+
+I hope you have a wonderful break!
