@@ -296,7 +296,7 @@ Card_Data = [
         "power": 0,
         "energy": 2,
         "img": "./assets/morbius.webp",
-        "series": 4,
+        "series": 2,
         "desc": "Ongoing: +2 Power for each time you discarded a card this game.",
         "id": 26,
         
