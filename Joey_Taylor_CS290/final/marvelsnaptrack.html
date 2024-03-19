@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/headerStyles.css">
+    <link rel="stylesheet" href="css/footerStyles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Snap Collection Tracker</title>
+    <script src="index.js" type="module"></script>
+</head>
+<body>
+    <!-- a tags are on the same line because of a white space bug -->
+    <nav><a href="/final/marvelsnaptrack.html">Home</a><a href="/final/about.html">About Us</a><a href="#contact-section">Contact</a></nav>
+    <header>
+        <h1>Card Database</h1>
+        <img src="https://media.discordapp.net/attachments/810330886280183810/1217291686611386498/final.png?ex=66037e3a&is=65f1093a&hm=88788074ac7c1936b99be52ac23acfb340d6e4cee75ff9878240cd4d3a2318f4&=&format=webp&quality=lossless"/>
+    </header>
+    <section id="collection-table">
+        <h2>Collection Series Filters:</h2>
+        <div class="filters">
+            <div class="filter">
+                <label for="s1">Series 1</label>
+                <input type="checkbox" id="s1" value="1" name="filter">
+            </div>
+            <div class="filter">
+                <label for="s2">Series 2</label>
+                <input type="checkbox" id="s2" value="2" name="filter">
+            </div>
+            <div class="filter">
+                <label for="s3">Series 3</label>
+                <input type="checkbox" id="s3" value="3" name="filter">
+            </div>
+            <div class="filter">
+                <label for="s4">Series 4</label>
+                <input type="checkbox" id="s4" value="4" name="filter">
+            </div>
+            <div class="filter">
+                <label for="s5">Series 5</label>
+                <input type="checkbox" id="s5" value="5" name="filter">
+            </div>
+        </div>
+        <h2>Key-Word Filters:</h2>
+        <div class="filters">
+            <div class="filter">
+                <label for="on-reveal">On-Reveal</label>
+                <input type="checkbox" id="on-reveal" value="on-reveal" name="filter">
+            </div>
+            <div class="filter">
+                <label for="on-going">On-Going</label>
+                <input type="checkbox" id="on-going" value="on-going" name="filter">
+            </div>
+            <div class="filter">
+                <label for="destroy">Destroy</label>
+                <input type="checkbox" id="destroy" value="destroy" name="filter">
+            </div>
+            <div class="filter">
+                <label for="discard">Discard</label>
+                <input type="checkbox" id="discard" value="discard" name="filter">
+            </div>
+            <div class="filter">
+                <label for="move">Move</label>
+                <input type="checkbox" id="move" value="move" name="filter">
+            </div>
+            <div class="filter">
+                <label for="no-ability">No-Ability</label>
+                <input type="checkbox" id="no-ability" value="no-ability" name="filter">
+            </div>
+        </div>
+        <a id="finalize-collection" class="disabled">Finalize Collection</a>
+        <div class="card-grid"></div>
+    </section>
+    <footer>
+        <h3 id="contact-section">Contact Us</h3>
+        <p>Got feedback or questions? We'd love to hear from you.<br>Email: <a href="mailto:joey.t2099@gmail.com">joey.t2099@gmail.com</a></p>
+        <div class="disclaimer">
+            <p>All art and/or graphic content is property of their respective artists and/or owners. Marvel Snap Track is not produced, endorsed, supported, or affiliated with MARVEL, Nuverse, and Second Dinner.</p>
+        </div>
+    </footer>
+</body>
+</html>
