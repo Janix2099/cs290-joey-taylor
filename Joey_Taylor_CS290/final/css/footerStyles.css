@@ -1,0 +1,38 @@
+/* Footer styles including typography and border */
+footer {
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px dashed darkgrey;
+    color: var(--secondary-color);
+    background-color: var(--main-color);
+    flex-grow: 1;
+}
+
+/* Disclaimer section styles */
+.disclaimer {
+    margin-top: 20px;
+    color: var(--dark-secondary-color);
+    font-size: 0.6em;
+}
+
+/* Styles for contact section identifier */
+#contact-section {
+    font-weight: bold;
+    color: var(--tertiary-color);
+    text-transform: uppercase;
+}
+
+/* Style for mailto links */
+a[href^="mailto:"] {
+    color: var(--tertiary-color);
+    text-decoration: none;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+    footer {
+        padding: 10px;
+        margin: 10px;
+    }
+}

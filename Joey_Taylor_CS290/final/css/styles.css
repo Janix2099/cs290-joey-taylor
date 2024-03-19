@@ -1,0 +1,173 @@
+/* Color variables for easy theme management */
+:root {
+    --main-color: #202020;
+    --secondary-color: #fff;
+    --dark-secondary-color: #cccccc;
+    --tertiary-color: #e62429;
+    --dark-tertiary-color: darkred;
+}
+
+/* Base font settings */
+html {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+/* Box sizing and default margin and padding for all elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling including background image and color */
+body {
+    line-height: 1.6;
+    color: var(--main-color);
+    letter-spacing: 1px;
+    background-image: url(https://img.freepik.com/free-vector/abstract-pattern-design_1053-524.jpg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Subheading styles */
+h2 {
+    color: var(--dark-tertiary-color);
+    font-variant: small-caps;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+/* Paragraph styles */
+p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* List styles */
+ol, ul {
+    padding-left: 20px;
+}
+
+/* List item spacing */
+li {
+    margin-bottom: 10px;
+}
+
+/* Section styling with border and background */
+section {
+    border: 1px solid var(--dark-tertiary-color);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+}
+
+/* Label styling */
+label {
+    color: var(--tertiary-color);
+    font-size: 1.2rem;
+    padding: 20px;
+    font-weight: bold;
+}
+
+/* Grid layout for cards */
+.card-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 175px);
+    gap: 1rem;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+/* Style for individual cards */
+.card-wrapper {
+    cursor: pointer;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for cards */
+.card-wrapper:hover {
+    transform: scale(1.05);
+}
+
+/* Initially hide the card information */
+.card-desc {
+    position: absolute;
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    width: 40ch;
+    left: 0;
+    transform: translateY(10px);
+    transition: visibility 0s linear 0.5s, opacity 0.5s linear, transform 0.5s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    background-color: white;
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 1000;
+    overflow: visible;
+}
+
+/* Show card information on hover */
+.card-wrapper:hover .card-desc {
+    visibility: visible; 
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0s;
+}
+
+/* Highlight cards that have been added to the collection */
+.card-wrapper.added {
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+
+/* Styles for the filters section */
+.filters {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 20ch);
+    cursor: pointer;
+}
+
+/* Base style for the finalize collection button */
+#finalize-collection {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the finalize collection button */
+#finalize-collection:hover {
+    background-color: var(--dark-tertiary-color);
+    cursor: pointer;
+}
+
+/* Style for the finalize collection button when disabled */
+#finalize-collection.disabled {
+    background-color: lightgray;
+    color: slategray;
+    cursor: not-allowed;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+    /* Adjust padding and margin for sections on mobile */
+    section {
+        padding: 10px;
+        margin: 10px;
+    }
+}

@@ -1,0 +1,174 @@
+/* Header layout and styling */
+header {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Responsive header image */
+header img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+    max-height: 150px;
+}
+
+/* Header title styling */
+header h1 {
+    padding: 10px;
+    color: var(--secondary-color);
+    align-self: center;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+nav a,
+nav a:hover,
+nav a:active,
+nav a:focus,
+nav a:visited {
+    text-decoration: none;
+    border-bottom: none;
+    box-shadow: none;
+    outline: none;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: var(--main-color);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    /* Reduced height for a slimmer appearance */
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+/* Navigation container styling for aligning nav items */
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Center the nav container */
+}
+
+/* Navigation link styling */
+nav a {
+    text-transform: uppercase;
+    padding: 10px 20px;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s, background-color 0.3s, border-radius 0.3s;
+}
+
+/* Hover effect for navigation links */
+nav a:hover {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+}
+
+header {
+        padding-top: 40px;
+        flex-direction: column;
+    }
+
+    header img {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    nav {
+        box-shadow: none;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav a {
+        padding: 10px;
+        font-size: 0.9rem;
+        text-align: center;
+        border-bottom: 1px solid var(--dark-secondary-color);
+        width: 100%;
+    }
+
+    nav a:last-child {
+        border-bottom: none;
+    }
+
+/* Tablet-specific styles */
+@media (max-width: 900px) {
+    header {
+        padding-top: 50px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .nav-container {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+    header {
+            padding-top: 40px;
+            flex-direction: column;
+        }
+    
+        header img {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+    
+        header h1 {
+            font-size: 1.5em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    
+        nav {
+            box-shadow: none;
+        }
+    
+        .nav-container {
+            flex-direction: column;
+            padding: 0;
+        }
+    
+        nav a {
+            padding: 10px;
+            font-size: 0.9rem;
+            text-align: center;
+            border-bottom: 1px solid var(--dark-secondary-color);
+            width: 100%;
+        }
+    
+        nav a:last-child {
+            border-bottom: none;
+        }
+}
